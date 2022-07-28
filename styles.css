@@ -1,0 +1,233 @@
+body {
+    background-color: #edeef2;
+}
+
+/* Navbar start */
+.navbar {
+    padding: 1rem;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.navbar-brand {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar-brand .logo {
+    width: 32px;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0px;
+    margin-left: 1rem;
+}
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    color: #0079c2;
+}
+
+/* navbar right end - search field and sign out btn  */
+.navbar .input-group {
+    border: 1px solid #d7d7d7;
+}
+
+.navbar select {
+    border: none;
+    font-weight: 500;
+    font-size: 12px;
+}
+.navbar select:hover {
+    cursor: pointer;
+}
+.navbar select:focus {
+    outline: none;
+}
+
+.navbar .search-field {
+    border: none;
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+}
+
+.navbar .search-btn {
+    border: none;
+}
+.navbar .search-btn svg {
+    padding-top: 4px;
+    padding-bottom: -4px;
+}
+.navbar .search-btn:hover {
+    cursor: pointer;
+}
+.navbar .search-btn:focus {
+    outline: none;
+}
+
+.navbar .sign-out-btn {
+    border: none;
+    padding: 0px;
+}
+.navbar .sign-out-btn:focus {
+    outline: none;
+}
+.navbar .sing-out-img {
+    width: 24px;
+}
+
+/* Navbar end */
+
+/* Main content start */
+.main-content .main-title {
+    font-weight: 700;
+    color: #0a3c53;
+}
+.main-content .btn-edit {
+    font-weight: 500;
+    border-width: 2px;
+}
+
+.btn-edit svg {
+    padding-top: 4px;
+}
+.btn-edit svg:hover path {
+    fill: white;
+}
+.btn-edit path {
+    fill: white;
+}
+
+.main-content .tab-title {
+    color: #018de3;
+    border-bottom: 2px solid #0079c2;
+}
+
+.main-content .agent-info p {
+    color: rgb(155, 155, 155);
+}
+.main-content .agent-info .dark {
+    color: #0a3c53b4;
+    font-weight: 500;
+}
+
+/* Main content - form start */
+.form-label-group {
+    position: relative;
+}
+select.form-control {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+    padding-left: 15px;
+}
+.form-label-group .form-control {
+    height: 3.25rem;
+    padding-top: 20px;
+    color: #0a3c53b4;
+    font-weight: 500;
+}
+.form-label-group > label {
+    position: absolute;
+    top: 0;
+    font-size: 0.75rem;
+    color: #0079c2;
+    font-weight: 500;
+}
+
+.form-radio-group {
+    position: relative;
+}
+.form-radio-group .radio-group-wrapper > label {
+    position: absolute;
+    top: 10px;
+    color: rgb(155, 155, 155);
+}
+.form-radio-group .form-control {
+    position: absolute;
+    top: 14px;
+    left: 110px;
+    display: inline;
+    width: 20px;
+    height: 20px;
+    background-color: #d9d9e0;
+}
+
+.form-radio-group .checkbox-left {
+    left: 0;
+}
+.form-radio-group .radio-group-wrapper .label-right {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
+
+#radio-signature {
+    left: 95px;
+}
+#radio-background {
+    left: 265px;
+}
+
+.crd {
+    color: rgb(155, 155, 155);
+}
+/* Main content - form end */
+
+/* Main content - tabs start */
+.main-content .tabs-wrapper {
+    background-color: white;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 10px #cccccc;
+    box-shadow: 0 0 10px #cccccc;
+}
+
+.tabs-wrapper .tabs-label-wrapper {
+    border-bottom: 2px solid rgb(220, 220, 220);
+}
+
+.tabs-wrapper ul {
+    text-align: justify;
+    list-style: none;
+    margin-bottom: -26px;
+}
+.tabs-wrapper ul:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+.tabs-label {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: rgb(170, 170, 170);
+    font-weight: 500;
+    border-bottom: 2px solid rgb(220, 220, 220);
+}
+.tabs-label.active,
+.tabs-label:hover {
+    color: #018de3;
+    border-bottom: 2px solid #0079c2;
+    cursor: pointer;
+}
+
+.tab-content .tab-pane {
+    display: none;
+}
+.tab-content .tab-pane.active {
+    display: block;
+}
+/* Main content - tabs end */
+
+.btn-wrapper .btn {
+    width: 110px;
+    font-weight: 500;
+}
+.btn-wrapper .btn-save,
+.btn-wrapper .btn-reset {
+    opacity: 0.3;
+}
+/* Main content end */

@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Agent Details</title>
+
+        <!-- BS4 Style Sheets -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+
+        <!-- Style Sheets -->
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+
+    <body>
+        <!-- Navbar start -->
+        <nav class="navbar navbar-light bg-light px-4">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="./assets/logo.png" alt="logo" />
+            </a>
+
+            <!-- specify the ID of the div for the collapse feature -->
+            <button
+                class="navbar-toggler mr-auto"
+                type="button"
+                data-toggle="collapse"
+                data-target="#"
+                aria-controls=""
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 48 48"
+                    width="32px"
+                    height="32px"
+                >
+                    <g id="surface129675403">
+                        <path
+                            style="
+                                stroke: none;
+                                fill-rule: nonzero;
+                                fill: rgb(0%, 47.450981%, 76.078433%);
+                                fill-opacity: 1;
+                            "
+                            d="M 6 10 C 5.277344 9.988281 4.609375 10.367188 4.246094 10.992188 C 3.878906 11.613281 3.878906 12.386719 4.246094 13.007812 C 4.609375 13.632812 5.277344 14.011719 6 14 L 42 14 C 42.722656 14.011719 43.390625 13.632812 43.753906 13.007812 C 44.121094 12.386719 44.121094 11.613281 43.753906 10.992188 C 43.390625 10.367188 42.722656 9.988281 42 10 Z M 6 22 C 5.277344 21.988281 4.609375 22.367188 4.246094 22.992188 C 3.878906 23.613281 3.878906 24.386719 4.246094 25.007812 C 4.609375 25.632812 5.277344 26.011719 6 26 L 42 26 C 42.722656 26.011719 43.390625 25.632812 43.753906 25.007812 C 44.121094 24.386719 44.121094 23.613281 43.753906 22.992188 C 43.390625 22.367188 42.722656 21.988281 42 22 Z M 6 34 C 5.277344 33.988281 4.609375 34.367188 4.246094 34.992188 C 3.878906 35.613281 3.878906 36.386719 4.246094 37.007812 C 4.609375 37.632812 5.277344 38.011719 6 38 L 42 38 C 42.722656 38.011719 43.390625 37.632812 43.753906 37.007812 C 44.121094 36.386719 44.121094 35.613281 43.753906 34.992188 C 43.390625 34.367188 42.722656 33.988281 42 34 Z M 6 34 "
+                        />
+                    </g>
+                </svg>
+            </button>
+
+            <!-- navbar right end - search field and sign out btn -->
+            <form class="inline-block mr-2">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <select class="px-2">
+                            <option value="individuals">Individuals</option>
+                            <option value="individuals">Individuals</option>
+                            <option value="individuals">Individuals</option>
+                            <option value="individuals">Individuals</option>
+                            <option value="individuals">Individuals</option>
+                        </select>
+                    </div>
+                    <input
+                        type="text"
+                        class="form-control search-field"
+                        placeholder=""
+                        aria-label="search"
+                        aria-describedby="basic-addon1"
+                    />
+                    <!-- <div class="input-group-prepend"> -->
+                    <button class="search-btn p-1 px-2" type="button">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 30 30"
+                            width="24px"
+                            height="24px"
+                        >
+                            <g id="surface143018607">
+                                <path
+                                    style="
+                                        stroke: none;
+                                        fill-rule: nonzero;
+                                        fill: rgb(0%, 47.450981%, 76.078433%);
+                                        fill-opacity: 1;
+                                    "
+                                    d="M 13 3 C 7.488281 3 3 7.488281 3 13 C 3 18.511719 7.488281 23 13 23 C 15.398438 23 17.597656 22.148438 19.324219 20.734375 L 25.292969 26.707031 C 25.542969 26.96875 25.917969 27.074219 26.265625 26.980469 C 26.617188 26.890625 26.890625 26.617188 26.980469 26.265625 C 27.074219 25.917969 26.96875 25.542969 26.707031 25.292969 L 20.734375 19.320312 C 22.148438 17.597656 23 15.398438 23 13 C 23 7.488281 18.511719 3 13 3 Z M 13 5 C 17.429688 5 21 8.570312 21 13 C 21 17.429688 17.429688 21 13 21 C 8.570312 21 5 17.429688 5 13 C 5 8.570312 8.570312 5 13 5 Z M 13 5 "
+                                />
+                            </g>
+                        </svg>
+                    </button>
+                    <!-- </div> -->
+                </div>
+            </form>
+
+            <button class="sign-out-btn ml-4" type="button">
+                <img
+                    class="sing-out-img"
+                    src="./assets/sign-out.png"
+                    alt="sign-out"
+                />
+            </button>
+        </nav>
+        <!-- Navbar end -->
+
+        <!-- Main content start -->
+
+        <div class="main-content p-4 mb-3">
+            <h3 class="main-title d-inline-block">Agent Details</h3>
+            <div class="d-flex flex-row-reverse">
+                <button
+                    type="button"
+                    class="btn btn-outline-success btn-edit py-2 px-4 mb-1"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 16 16"
+                        width="16px"
+                        height="16px"
+                    >
+                        <g id="surface144017987">
+                            <path
+                                class="path"
+                                style="
+                                    stroke: none;
+                                    fill-rule: nonzero;
+                                    fill: rgb(
+                                        15.686275%,
+                                        65.490198%,
+                                        27.058825%
+                                    );
+                                    fill-opacity: 1;
+                                "
+                                d="M 12.367188 0.152344 C 12 0.152344 11.640625 0.28125 11.367188 0.558594 L 10.75 1.191406 L 14.808594 5.269531 L 15.421875 4.632812 C 15.976562 4.078125 15.984375 3.179688 15.421875 2.617188 L 13.382812 0.578125 C 13.101562 0.296875 12.730469 0.15625 12.367188 0.152344 Z M 10.058594 1.75 L 9.097656 2.671875 L 13.328125 6.902344 L 14.308594 6 Z M 8.480469 3.347656 L 1.828125 9.941406 C 1.671875 10.023438 1.5625 10.160156 1.519531 10.328125 L 0.0976562 15.152344 C 0.03125 15.367188 0.0898438 15.597656 0.246094 15.753906 C 0.402344 15.910156 0.632812 15.96875 0.847656 15.902344 L 5.671875 14.480469 C 5.898438 14.445312 6.082031 14.289062 6.152344 14.078125 L 12.710938 7.578125 L 11.808594 6.671875 L 5.078125 13.421875 L 2.367188 14.210938 L 1.789062 13.632812 L 2.617188 10.808594 L 9.289062 4.152344 Z M 9.941406 4.828125 L 3.191406 11.597656 L 4.171875 11.808594 L 4.308594 12.710938 L 11.078125 5.960938 Z M 9.941406 4.828125 "
+                            />
+                        </g>
+                    </svg>
+                    <p class="mb-0 d-inline-block ml-1">EDIT</p>
+                </button>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-7 left-tab pr-4">
+                    <div class="tabs-wrapper p-4">
+                        <h5 class="tab-title pb-4 mb-3">
+                            Agent: D20822 Aaron I Scott
+                        </h5>
+                        <div class="agent-info">
+                            <p class="mb-1">
+                                <span class="dark">Birth Date: </span>08/13/1977
+                            </p>
+                            <p class="mb-1">
+                                <span class="dark">SSN: </span>XXX-XX-XXXX
+                            </p>
+                            <p class="mb-1">
+                                <span class="dark">NPN: </span>1009224
+                            </p>
+                        </div>
+
+                        <form class="mt-3">
+                            <fieldset disabled="disabled">
+                                <div class="form-label-group mb-2">
+                                    <select
+                                        class="form-control"
+                                        id="select-firm"
+                                        style="height: 3rem"
+                                    >
+                                        <option value="1">
+                                            F00700-Chase Insurance Agency. Inc.
+                                        </option>
+                                        <option value="2">
+                                            F00700-Chase Insurance Agency. Inc.
+                                        </option>
+                                        <option value="3">
+                                            F00700-Chase Insurance Agency. Inc.
+                                        </option>
+                                    </select>
+                                    <label class="px-3 py-1" for="select-firm"
+                                        >Firm</label
+                                    >
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6 pr-2">
+                                        <div class="form-label-group mb-2">
+                                            <select
+                                                class="form-control"
+                                                id="select-rep-type"
+                                                style="height: 3rem"
+                                            >
+                                                <option value="1">Bank</option>
+                                                <option value="2">Bank</option>
+                                                <option value="3">Bank</option>
+                                            </select>
+                                            <label
+                                                class="px-3 py-1"
+                                                for="select-rep-type"
+                                                >Rep Type</label
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="col-6 pl-2">
+                                        <div class="form-label-group mb-2">
+                                            <input
+                                                type="text"
+                                                id="input-hire-date"
+                                                class="form-control px-3"
+                                                placeholder="Hire Date"
+                                                value="02/10/2009"
+                                                required
+                                            />
+                                            <label
+                                                class="px-3 py-1"
+                                                for="input-hire-date"
+                                                >Hire Date</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6 pr-2">
+                                        <div class="form-label-group mb-2">
+                                            <select
+                                                class="form-control"
+                                                id="select-status"
+                                                style="height: 3rem"
+                                            >
+                                                <option value="1">
+                                                    Terminated
+                                                </option>
+                                                <option value="2">
+                                                    Terminated
+                                                </option>
+                                                <option value="3">
+                                                    Terminated
+                                                </option>
+                                            </select>
+                                            <label
+                                                class="px-3 py-1"
+                                                for="select-status"
+                                                >Status</label
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="col-6 pl-2">
+                                        <div class="form-label-group mb-2">
+                                            <input
+                                                type="text"
+                                                id="input-termination-date"
+                                                class="form-control px-3"
+                                                placeholder="Termination Date"
+                                                value="11/04/2011"
+                                                required
+                                            />
+                                            <label
+                                                class="px-3 py-1"
+                                                for="input-termination-date"
+                                                >Termination Date</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6 pr-2">
+                                        <div class="form-radio-group mb-2">
+                                            <div
+                                                class="radio-group-wrapper d-inline"
+                                            >
+                                                <label
+                                                    class="pl-3 pr-2"
+                                                    for="radio-split-comm"
+                                                    >Split Comm</label
+                                                >
+                                                <input
+                                                    type="checkbox"
+                                                    id="radio-split-comm"
+                                                    class="form-control px-3"
+                                                    required
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 pl-2">
+                                        <div class="form-label-group mb-2">
+                                            <select
+                                                class="form-control"
+                                                id="select-classification"
+                                                style="height: 3rem"
+                                            >
+                                                <option value="1">
+                                                    Platform
+                                                </option>
+                                                <option value="2">
+                                                    Platform
+                                                </option>
+                                                <option value="3">
+                                                    Platform
+                                                </option>
+                                            </select>
+                                            <label
+                                                class="px-3 py-1"
+                                                for="select-classification"
+                                                >Classification</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-label-group mb-2">
+                                    <input
+                                        type="text"
+                                        id="input-firm"
+                                        class="form-control px-3"
+                                        placeholder="Email"
+                                        value="aaron.scott@test.com"
+                                        required
+                                    />
+                                    <label class="px-3 py-1" for="input-firm"
+                                        >Email</label
+                                    >
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6 pr-2">
+                                        <div class="form-label-group mb-2">
+                                            <input
+                                                type="text"
+                                                id="input-phone"
+                                                class="form-control px-3"
+                                                placeholder="Phone"
+                                                value="(646) 660-0004"
+                                                required
+                                            />
+                                            <label
+                                                class="px-3 py-1"
+                                                for="input-phone"
+                                                >Phone</label
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="col-3 pl-2">
+                                        <div class="form-radio-group mb-2">
+                                            <div
+                                                class="radio-group-wrapper d-inline"
+                                            >
+                                                <input
+                                                    type="checkbox"
+                                                    id="radio-non-producer"
+                                                    class="form-control pl-3 checkbox-left"
+                                                    required
+                                                />
+                                                <label
+                                                    class="label-right"
+                                                    for="radio-non-producer"
+                                                    >Non Producer</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 pl-2">
+                                        <div class="form-radio-group mb-2">
+                                            <div
+                                                class="radio-group-wrapper d-inline"
+                                            >
+                                                <input
+                                                    type="checkbox"
+                                                    id="radio-specialist"
+                                                    class="form-control pl-3 checkbox-left"
+                                                    required
+                                                />
+                                                <label
+                                                    class="label-right"
+                                                    for="radio-specialist"
+                                                    >Specialist</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <div class="form-radio-group mb-4">
+                                            <div
+                                                class="radio-group-wrapper d-inline"
+                                            >
+                                                <label
+                                                    class="pl-3"
+                                                    for="radio-signature"
+                                                    >Signature</label
+                                                >
+                                                <input
+                                                    type="checkbox"
+                                                    id="radio-signature"
+                                                    class="form-control px-3"
+                                                    required
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <div class="form-radio-group mb-4">
+                                            <div
+                                                class="radio-group-wrapper d-inline"
+                                            >
+                                                <label
+                                                    class="pl-3 pr-2"
+                                                    for="radio-background"
+                                                    >Background Reviewed and
+                                                    Passed</label
+                                                >
+                                                <input
+                                                    type="checkbox"
+                                                    id="radio-background"
+                                                    class="form-control px-3"
+                                                    required
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="wrapper pl-3 mt-4">
+                                    <span class="crd">CRD</span>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 right-tab pl-4">
+                    <div class="tabs-wrapper py-4">
+                        <div class="tabs-label-wrapper mb-4">
+                            <ul class="mx-4 p-0">
+                                <li
+                                    class="tabs-label d-inline-block pb-4 px-2 active"
+                                    for="branch"
+                                >
+                                    Branch
+                                </li>
+                                <li
+                                    class="tabs-label d-inline-block pb-4 px-2"
+                                    for="home"
+                                >
+                                    Home
+                                </li>
+                                <li
+                                    class="tabs-label d-inline-block pb-4 px-2"
+                                    for="licenses"
+                                >
+                                    Licenses
+                                </li>
+                                <li
+                                    class="tabs-label d-inline-block pb-4 px-2"
+                                    for="appointments"
+                                >
+                                    Appointments
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content px-4">
+                            <fieldset disabled="disabled">
+                                <div
+                                    class="tab-pane active fade show"
+                                    id="branch"
+                                >
+                                    <div class="form-label-group mb-2">
+                                        <input
+                                            type="text"
+                                            id="input-branch"
+                                            class="form-control px-3"
+                                            placeholder="Branch"
+                                            value="B32937"
+                                            required
+                                        />
+                                        <label
+                                            class="px-3 py-1"
+                                            for="input-branch"
+                                            >Branch#</label
+                                        >
+                                    </div>
+
+                                    <div class="form-label-group mb-2">
+                                        <input
+                                            type="text"
+                                            id="input-branch-name"
+                                            class="form-control px-3"
+                                            placeholder="Branch Name"
+                                            value="Chase Insurance Agency. Inc."
+                                            required
+                                        />
+                                        <label
+                                            class="px-3 py-1"
+                                            for="input-branch-name"
+                                            >Branch Name</label
+                                        >
+                                    </div>
+
+                                    <div class="form-label-group mb-2">
+                                        <input
+                                            type="text"
+                                            id="input-address-1"
+                                            class="form-control px-3"
+                                            placeholder="Address 1"
+                                            value="111 Wisconsin Avenue"
+                                            required
+                                        />
+                                        <label
+                                            class="px-3 py-1"
+                                            for="input-address-1"
+                                            >Address 1</label
+                                        >
+                                    </div>
+
+                                    <div class="form-label-group mb-2">
+                                        <input
+                                            type="text"
+                                            id="input-address-2"
+                                            class="form-control px-3"
+                                            placeholder="Address 2"
+                                            value="Suite 1100"
+                                            required
+                                        />
+                                        <label
+                                            class="px-3 py-1"
+                                            for="input-address-2"
+                                            >Address 2</label
+                                        >
+                                    </div>
+
+                                    <div class="form-label-group mb-2">
+                                        <input
+                                            type="text"
+                                            id="input-address-3"
+                                            class="form-control px-3"
+                                            placeholder=""
+                                            value=""
+                                            required
+                                        />
+                                        <label
+                                            class="px-3 py-1"
+                                            for="input-address-3"
+                                            >Address 3</label
+                                        >
+                                    </div>
+
+                                    <div class="form-label-group mb-2">
+                                        <input
+                                            type="text"
+                                            id="input-city"
+                                            class="form-control px-3"
+                                            placeholder="City"
+                                            value="Milwaukee"
+                                            required
+                                        />
+                                        <label
+                                            class="px-3 py-1"
+                                            for="input-city"
+                                            >City</label
+                                        >
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-6 pr-2">
+                                            <div class="form-label-group mb-2">
+                                                <input
+                                                    type="text"
+                                                    id="input-state"
+                                                    class="form-control px-3"
+                                                    placeholder="State"
+                                                    value="WI"
+                                                    required
+                                                />
+                                                <label
+                                                    class="px-3 py-1"
+                                                    for="input-state"
+                                                    >State</label
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="col-6 pr-2">
+                                            <div class="form-label-group mb-2">
+                                                <input
+                                                    type="text"
+                                                    id="input-zip"
+                                                    class="form-control px-3"
+                                                    placeholder="Zip"
+                                                    value="53202"
+                                                    required
+                                                />
+                                                <label
+                                                    class="px-3 py-1"
+                                                    for="input-zip"
+                                                    >Zip</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-6 pr-2">
+                                            <div class="form-label-group mb-2">
+                                                <input
+                                                    type="text"
+                                                    id="input-phone"
+                                                    class="form-control px-3"
+                                                    placeholder=""
+                                                    value=""
+                                                    required
+                                                />
+                                                <label
+                                                    class="px-3 py-1"
+                                                    for="input-phone"
+                                                    >Phone</label
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="col-6 pr-2">
+                                            <div class="form-label-group mb-2">
+                                                <input
+                                                    type="text"
+                                                    id="input-fax"
+                                                    class="form-control px-3"
+                                                    placeholder=""
+                                                    value=""
+                                                    required
+                                                />
+                                                <label
+                                                    class="px-3 py-1"
+                                                    for="input-fax"
+                                                    >Fax</label
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="home">
+                                    <div class="form-label-group mb-2">
+                                        <input
+                                            type="text"
+                                            id="input-home"
+                                            class="form-control px-3"
+                                            placeholder="Home"
+                                            value="Ziya Manzil"
+                                            required
+                                        />
+                                        <label
+                                            class="px-3 py-1"
+                                            for="input-home"
+                                            >Home#</label
+                                        >
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="licenses">
+                                    <div class="form-label-group mb-2">
+                                        <input
+                                            type="text"
+                                            id="input-licenses"
+                                            class="form-control px-3"
+                                            placeholder="Licenses"
+                                            value="HackerRank"
+                                            required
+                                        />
+                                        <label
+                                            class="px-3 py-1"
+                                            for="input-licenses"
+                                            >Licenses#</label
+                                        >
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="appointments">
+                                    <div class="form-label-group mb-2">
+                                        <input
+                                            type="text"
+                                            id="input-appointments"
+                                            class="form-control px-3"
+                                            placeholder=""
+                                            value=""
+                                            required
+                                        />
+                                        <label
+                                            class="px-3 py-1"
+                                            for="input-appointments"
+                                            >Appointments#</label
+                                        >
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row-reverse m-4 mt-3 mb-5 btn-wrapper">
+            <button
+                type="button"
+                class="ml-3 btn btn-primary btn-save"
+                disabled
+            >
+                SAVE
+            </button>
+            <button type="button" class="ml-3 btn btn-outline-secondary">
+                CANCEL
+            </button>
+            <button
+                type="button"
+                class="ml-3 btn btn-outline-primary btn-reset"
+                disabled
+            >
+                RESET
+            </button>
+        </div>
+        <!-- Main content end -->
+
+        <!-- BS4 Scripts  -->
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="./scripts.js"></script>
+    </body>
+</html>
