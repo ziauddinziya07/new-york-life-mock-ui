@@ -114,6 +114,13 @@ body {
 }
 
 /* Main content - form start */
+.main-content .tabs-wrapper {
+    background-color: white;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 10px #cccccc;
+    box-shadow: 0 0 10px #cccccc;
+}
+
 .form-label-group {
     position: relative;
 }
@@ -179,11 +186,8 @@ select.form-control {
 /* Main content - form end */
 
 /* Main content - tabs start */
-.main-content .tabs-wrapper {
-    background-color: white;
-    border-radius: 4px;
-    -webkit-box-shadow: 0 0 10px #cccccc;
-    box-shadow: 0 0 10px #cccccc;
+.right-tab .tabs-wrapper {
+    height: 674px;
 }
 
 .tabs-wrapper .tabs-label-wrapper {
